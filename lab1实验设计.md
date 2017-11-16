@@ -169,11 +169,11 @@
 
 #### 七、重要的数据结构
 
-![屏幕快照 2017-11-04 上午9.42.35](/Users/chengyunfei/Desktop/屏幕快照 2017-11-04 上午9.42.35.png)
+![Token](https://github.com/cccyf/LexicalAnalyser/raw/master/images/Token.png)
 
-![屏幕快照 2017-11-04 上午9.55.05](/Users/chengyunfei/Desktop/屏幕快照 2017-11-04 上午9.55.05.png)
+![TokenType](https://github.com/cccyf/LexicalAnalyser/raw/master/images/TokenType.png)
 
-![屏幕快照 2017-11-04 上午9.54.55](/Users/chengyunfei/Desktop/屏幕快照 2017-11-04 上午9.54.55.png)
+![Lex](https://github.com/cccyf/LexicalAnalyser/raw/master/images/Lex.png)
 
 #### 八、实现算法
 
@@ -255,15 +255,104 @@ public class Test {
 
 输出：
 
-![屏幕快照 2017-11-04 上午9.49.48](/Users/chengyunfei/Desktop/屏幕快照 2017-11-04 上午9.49.48.png)
-
-![屏幕快照 2017-11-04 上午9.49.48](/Users/chengyunfei/Desktop/屏幕快照 2017-11-04 上午9.49.59.png)
-
-![屏幕快照 2017-11-04 上午9.49.48](/Users/chengyunfei/Desktop/屏幕快照 2017-11-04 上午9.50.08.png)
-
-![屏幕快照 2017-11-04 上午9.49.48](/Users/chengyunfei/Desktop/屏幕快照 2017-11-04 上午9.50.17.png)
-
-
+```
+< public , RESERVEDWORD >
+< class , RESERVEDWORD >
+< Test , ID >
+< { , DELIMITER >
+< /* annotations */ , ANNOTATION >
+< public , RESERVEDWORD >
+< static , RESERVEDWORD >
+< void , RESERVEDWORD >
+< main , ID >
+< ( , DELIMITER >
+< ) , DELIMITER >
+< { , DELIMITER >
+< Test , ID >
+< t , ID >
+< = , OPERATOR >
+< new , RESERVEDWORD >
+< Test , ID >
+< ( , DELIMITER >
+< ) , DELIMITER >
+< ; , DELIMITER >
+< double , RESERVEDWORD >
+< a , ID >
+< = , OPERATOR >
+< 50.0 , FLOAT >
+< ; , DELIMITER >
+< int , RESERVEDWORD >
+< b , ID >
+< = , OPERATOR >
+< 2 , NUMBER >
+< ; , DELIMITER >
+< // annotations , ANNOTATION >
+< char , RESERVEDWORD >
+< c , ID >
+< = , OPERATOR >
+< char , ERROR , Error : length of char is more than 1 >
+< double , RESERVEDWORD >
+< result , ID >
+< = , OPERATOR >
+< t , ID >
+< . , DELIMITER >
+< power , ID >
+< ( , DELIMITER >
+< a , ID >
+< , , DELIMITER >
+< b , ID >
+< ) , DELIMITER >
+< ; , DELIMITER >
+< } , DELIMITER >
+< // annotations , ANNOTATION >
+< private , RESERVEDWORD >
+< double , RESERVEDWORD >
+< power , ID >
+< ( , DELIMITER >
+< double , RESERVEDWORD >
+< a , ID >
+< , , DELIMITER >
+< int , RESERVEDWORD >
+< b , ID >
+< ) , DELIMITER >
+< { , DELIMITER >
+< // annotations , ANNOTATION >
+< double , RESERVEDWORD >
+< result , ID >
+< = , OPERATOR >
+< 2.2. , ERROR , Error : The float has more than 1 point  >
+< ; , DELIMITER >
+< for , RESERVEDWORD >
+< ( , DELIMITER >
+< int , RESERVEDWORD >
+< i , ID >
+< = , OPERATOR >
+< 0 , NUMBER >
+< ; , DELIMITER >
+< i , ID >
+< < , OPERATOR >
+< b , ID >
+< ; , DELIMITER >
+< i , ID >
+< ++ , OPERATOR >
+< ) , DELIMITER >
+< { , DELIMITER >
+< result , ID >
+< *= , OPERATOR >
+< a , ID >
+< ; , DELIMITER >
+< } , DELIMITER >
+< return , RESERVEDWORD >
+< result , ID >
+< ; , DELIMITER >
+< } , DELIMITER >
+< // annotations , ANNOTATION >
+< Cannot Identify , ERROR , Error : This symbol @ cannot be identified  >
+< Cannot Identify , ERROR , Error : This symbol @ cannot be identified  >
+< } , DELIMITER >
+< // annotations , ANNOTATION >
+< /* annotations */ , ERROR , Error : lacking annotation symbols >
+```
 
 #### 十一、遇到的问题
 
