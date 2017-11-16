@@ -1,0 +1,96 @@
+< public , RESERVEDWORD >
+< class , RESERVEDWORD >
+< Test , ID >
+< { , DELIMITER >
+< /* annotations */ , ANNOTATION >
+< public , RESERVEDWORD >
+< static , RESERVEDWORD >
+< void , RESERVEDWORD >
+< main , ID >
+< ( , DELIMITER >
+< ) , DELIMITER >
+< { , DELIMITER >
+< Test , ID >
+< t , ID >
+< = , OPERATOR >
+< new , RESERVEDWORD >
+< Test , ID >
+< ( , DELIMITER >
+< ) , DELIMITER >
+< ; , DELIMITER >
+< double , RESERVEDWORD >
+< a , ID >
+< = , OPERATOR >
+< 50.0 , FLOAT >
+< ; , DELIMITER >
+< int , RESERVEDWORD >
+< b , ID >
+< = , OPERATOR >
+< 2 , NUMBER >
+< ; , DELIMITER >
+< // annotations , ANNOTATION >
+< char , RESERVEDWORD >
+< c , ID >
+< = , OPERATOR >
+< char , ERROR , Error : length of char is more than 1 >
+< double , RESERVEDWORD >
+< result , ID >
+< = , OPERATOR >
+< t , ID >
+< . , DELIMITER >
+< power , ID >
+< ( , DELIMITER >
+< a , ID >
+< , , DELIMITER >
+< b , ID >
+< ) , DELIMITER >
+< ; , DELIMITER >
+< } , DELIMITER >
+< // annotations , ANNOTATION >
+< private , RESERVEDWORD >
+< double , RESERVEDWORD >
+< power , ID >
+< ( , DELIMITER >
+< double , RESERVEDWORD >
+< a , ID >
+< , , DELIMITER >
+< int , RESERVEDWORD >
+< b , ID >
+< ) , DELIMITER >
+< { , DELIMITER >
+< // annotations , ANNOTATION >
+< double , RESERVEDWORD >
+< result , ID >
+< = , OPERATOR >
+< 2.2. , ERROR , Error : The float has more than 1 point  >
+< ; , DELIMITER >
+< for , RESERVEDWORD >
+< ( , DELIMITER >
+< int , RESERVEDWORD >
+< i , ID >
+< = , OPERATOR >
+< 0 , NUMBER >
+< ; , DELIMITER >
+< i , ID >
+< < , OPERATOR >
+< b , ID >
+< ; , DELIMITER >
+< i , ID >
+< ++ , OPERATOR >
+< ) , DELIMITER >
+< { , DELIMITER >
+< result , ID >
+< *= , OPERATOR >
+< a , ID >
+< ; , DELIMITER >
+< } , DELIMITER >
+< return , RESERVEDWORD >
+< result , ID >
+< ; , DELIMITER >
+< } , DELIMITER >
+< // annotations , ANNOTATION >
+< Cannot Identify , ERROR , Error : This symbol @ cannot be identified  >
+< Cannot Identify , ERROR , Error : This symbol @ cannot be identified  >
+< } , DELIMITER >
+< // annotations , ANNOTATION >
+< /* annotations */ , ERROR , Error : lacking annotation symbols >

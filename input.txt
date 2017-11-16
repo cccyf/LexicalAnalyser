@@ -1,0 +1,29 @@
+public class Test {
+    /*
+     * main method
+     */
+    public static void main() {
+        Test t = new Test();
+        double a = 50.0;
+        int b = 2;
+        //should discover an error
+        char c = 'aa';
+        double result = t.power(a, b);
+    }
+
+    //calculate a ^ b
+    private double power(double a, int b) {
+        //should discover an error
+        double result = 2.2.;
+        for (int i = 0; i < b; i++) {
+            result *= a;
+        }
+        return result;
+    }
+
+//should discover an error
+@@
+
+}
+//should discover an error
+/*
